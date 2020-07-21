@@ -14,7 +14,9 @@ const cheerio=require('cheerio')
 // })
 
 
-
+router.get('/check',(req,res)=>{
+  res.send("checking")
+})
 router.post('/search',async(req,res)=>{
   let url="https://medium.com/search/posts?q="+req.body.tagName+"&count=100&ignore=2680ad8dd5ad&ignore=22bf5dadc3a5&ignore=3db32d5c86f2&ignore=ca84da25b9d2&ignore=ad22740df707&ignore=d046c1f5896b&ignore=f905845c732f&ignore=5b1b7a6094b2&ignore=ace7893af40c&ignore=50b70d393f15"
   
